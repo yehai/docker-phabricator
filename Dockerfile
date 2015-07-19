@@ -7,7 +7,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv 8B3981E7A6852F782CC49516
 && echo "deb http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main " >> /etc/apt/sources.list \
 && apt-get update \
 && apt-get install -y nano supervisor logrotate locales \
-nginx openssh-server mysql-client git-core \
+nginx openssh-server mysql-client git-core sendmail php5-ldap subversion \
 php5-fpm php5-apcu php5-mysql php5-curl php5-gd python-pygments \
 && update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX \
 && locale-gen en_US.UTF-8 \
